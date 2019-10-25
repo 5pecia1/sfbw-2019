@@ -1,0 +1,12 @@
+[package]
+name = "hello-casperlabs"
+version = "0.1.0"
+authors = ["Michael Birch <birchmd@casperlabs.io>"]
+edition = "2018"
+
+[lib]
+name = "hello_casperlabs"
+crate-type = ["cdylib"]
+
+[dependencies]
+contract-ffi = { package = "casperlabs-contract-ffi", version = "0.18.0" }

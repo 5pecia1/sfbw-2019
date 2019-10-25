@@ -1,2 +1,5 @@
 ## directory where node + EE is installed
 dev-env
+
+## output from rust compilation
+target
