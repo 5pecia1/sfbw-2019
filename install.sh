@@ -22,9 +22,13 @@ rm casperlabs-engine-grpc-server-0.8.1_linux_x86_64.tar.gz
 ## keys for node
 mkdir data
 wget https://raw.githubusercontent.com/CasperLabs/CasperLabs/v0.8.1/hack/key-management/docker-gen-keys.sh
+wget https://raw.githubusercontent.com/CasperLabs/CasperLabs/v0.8.1/hack/key-management/docker-gen-account-keys.sh
+chmod +x docker-gen-account-keys.sh
 chmod +x docker-gen-keys.sh
+./docker-gen-account-keys.sh ./data/
 ./docker-gen-keys.sh ./data/
 rm docker-gen-keys.sh
+rm docker-gen-account-keys.sh
 
 ## Configurations for genesis block
 mkdir -p ./data/chainspec/genesis
