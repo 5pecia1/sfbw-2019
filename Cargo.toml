@@ -2,4 +2,7 @@
 
 members = [
     "hello-casperlabs",
+    "tic-tac-toe/core",
+    "tic-tac-toe/cli",
+    "tic-tac-toe/blockchain",
 ]

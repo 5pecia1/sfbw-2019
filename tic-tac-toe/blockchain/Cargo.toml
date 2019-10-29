@@ -1,0 +1,17 @@
+[package]
+name = "tic-tac-toe-blockchain"
+version = "0.1.0"
+authors = ["Michael Birch <birchmd@casperlabs.io>"]
+edition = "2018"
+
+[lib]
+name = "tic_tac_toe"
+crate-type = ["cdylib"]
+
+[dependencies]
+tic-tac-toe-core = { path = "../core", package = "tic-tac-toe-core" }
+contract-ffi = { package = "casperlabs-contract-ffi", version = "0.18.0" }
+num-traits = { version = "0.2.8", default-features = false }
+
+[dev-dependencies]
+contract-ffi = { package = "casperlabs-contract-ffi", version = "0.18.0", default-features = false, features=["std"] }
