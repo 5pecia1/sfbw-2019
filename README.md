@@ -160,3 +160,39 @@ cargo build -p tic-tac-toe-cli --release
 ```
 To play the console app, you again input the row and column for your move, but
 here they are separated by a comma (no space), e.g. `0,0`.
+
+## Programmatic Testing with Python
+
+Based on Maciej's
+[smart-contract-template](https://github.com/zie1ony/casperlabs-smart-contract-template)
+repo.
+
+Prerequisites:
+
+```shell
+sudo apt install protobuf-compiler git docker docker-compose python3-pip
+sudo pip3 install pipenv docker
+```
+
+Set up environment:
+
+```shell
+make prepare
+make console
+```
+
+Run tests:
+
+```python
+>>> run_tests()
+```
+
+Exit when finished:
+
+```python
+>>> quit()
+```
+
+The test is defined in `tests/test_game.py`. It essentially performs the same
+logic we just did manually using the scala client and shell scripts, but now it
+is done programmatically via the python client.
